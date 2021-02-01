@@ -1,13 +1,17 @@
 # Phidippides
 Documentatie ZED-code
+Deze documentatie is ook te vinden in de Teams onder 'Team_Phidippides->Quadriga->2020-2021->Technische Informatica->project56'
 
 Inleiding
+
 Tijdens het project is er software geschreven voor de ZED-camera. Deze software draait het objectdetectie model en bepaald de afstand tot gedetecteerde objecten. Dit is samengevoegd tot één programma. In dit document worden de verschillende onderdelen van de code toegelicht. 
 
 Functionaliteiten
+
 De geschreven software draait het objectdetectie model en bepaald de afstand tot de gedetecteerde objecten. Het programma kan werken met ieder tensorflow model. In de code staat deze nu gekoppeld aan ons eigen getrainde model, maar dat kan gemakkelijk veranderd worden als er een ander model gebruikt moet worden. 
 
 ZED-camera Python API
+
 Voor de software wordt gebruik gemaakt van de ZED-camera Python API. Met deze API kan de camera in Python bestuurd worden. De API wordt in de geschreven software gebruikt om beelden en diepte informatie van de camera op te vragen. Om de camera te gebruiken moet er eerst wat initialisatie gedaan worden:
 Met ‘init = sl.InitParameters()’ worden de standaard parameters ingesteld.
 Met ‘init.coordinate_units = sl.UNIT.METER’ wordt de afstand gemeten in meters. Standaard is dit in millimeters.
